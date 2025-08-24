@@ -166,19 +166,25 @@ Make sure you have completed the [React Native - Environment Setup](https://reac
    ```bash
    npm install
    ```
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+   > **Note**: We use `--legacy-peer-deps` to resolve installation conflicts with `react-native-fast-image`.
+   > This ensures compatibility with React Native 0.81 and prevents peer dependency errors.
 
-2. **iOS Setup:**
+
+3. **iOS Setup:**
    ```bash
    bundle install
    bundle exec pod install
    ```
 
-3. **Start Metro bundler:**
+4. **Start Metro bundler:**
    ```bash
    npm start
    ```
 
-4. **Run the app:**
+5. **Run the app:**
    ```bash
    # iOS
    npm run ios
